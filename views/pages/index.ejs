@@ -2,14 +2,18 @@
 <html lang="en">
   <head>
     <%- include('../partials/head'); %>
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login page</title>
   </head>
   <body class="container">
     <header><%- include('../partials/header'); %></header>
-
+    <h1>Login</h1>
     <main>
-      <h1>owo</h1>
+      <form action="/welcome" method="post">
+        <label for="username"> Username
+            <input type="text" name="username" id="username">
+        </label>
+        <input type="submit" value="Login" />
+      </form>
     </main>
   </body>
 </html>
