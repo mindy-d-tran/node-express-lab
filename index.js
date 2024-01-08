@@ -24,13 +24,13 @@ app.get("/welcome", (req, res) => {
 });
 app.post("/welcome", (req, res) => {
   console.log(req.body);
-  res.send("did it work?");
+  res.send("successfully log in ");
 });
 app.get('/download', (req,res)=>{
   res.download('./assets/husband-builds-home-baby-bunnies.jpg', 'bunny');
 })
 // automaticially redirect to the login page if it's not one of the routes above
-// app.all('*', (req,res)=>{
-//     res.redirect('/');
-// })
+app.all('*', (req,res)=>{
+    res.send('404 Page not found');
+})
 app.listen(port, () => console.log(`port is running ${port}`));
