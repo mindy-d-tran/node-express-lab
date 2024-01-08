@@ -23,6 +23,7 @@ nav > ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  width: 100vw;
 }
 li{
 
@@ -37,6 +38,7 @@ li:hover {
   width: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   border-radius: 1em;
   overflow: hidden;
@@ -50,5 +52,8 @@ li:hover {
   overflow: hidden;
 }
 .img-card a{
-  margin: 1em 0.5em;
+  margin: 1em 0.5em 0.25em;
+  padding: 0.5em;
+  background-color: #fff;
+  border-radius: 0.5em;
 }
