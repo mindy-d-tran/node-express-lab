@@ -31,6 +31,7 @@ app.get('/download', (req,res)=>{
 })
 // automaticially redirect to the login page if it's not one of the routes above
 app.all('*', (req,res)=>{
+  res.status(404)
     res.send('404 Page not found');
 })
 app.listen(port, () => console.log(`port is running ${port}`));
