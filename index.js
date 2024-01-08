@@ -26,6 +26,9 @@ app.post("/welcome", (req, res) => {
   console.log(req.body);
   res.send("did it work?");
 });
+app.get('/download', (req,res)=>{
+  res.download('./assets/husband-builds-home-baby-bunnies.jpg', 'bunny');
+})
 // automaticially redirect to the login page if it's not one of the routes above
 // app.all('*', (req,res)=>{
 //     res.redirect('/');
