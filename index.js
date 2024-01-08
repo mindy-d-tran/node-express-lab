@@ -15,7 +15,7 @@ app.use(morgan("short"));
 // store date from form
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("./styles"));
-
+app.use(express.static('./assets'));
 // routes
 // doesnt work if it's in another folder because it doesn't have access to the body
 app.use("/", loginRoute);
